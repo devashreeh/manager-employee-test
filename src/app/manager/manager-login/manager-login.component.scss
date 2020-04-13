@@ -1,0 +1,25 @@
+.login-class{
+    text-align: center;
+    padding-top: 10%;
+    .username {
+        width: 25%;
+        height: 60px;
+    }
+    .password{
+        width: 25%;
+    }
+    .login-btn{
+        width: 25%;
+    }
+    .login-title{
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .img-icon{
+        width:100px;
+        height: 100px;
+    }
+    .create-acc{
+        padding-top: 10px;
+    }
+}

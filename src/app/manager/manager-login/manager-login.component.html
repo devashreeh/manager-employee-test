@@ -1,0 +1,24 @@
+<div class="login-class">
+    <div class="row">
+        <img src="assets/icons/iconlogin.png" class="img-icon">
+    </div>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <mat-form-field appearance="outline" class="username">
+                <mat-label>Username</mat-label>
+                <input matInput type="text" placeholder="me@domain.com" formControlName="email">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline" class="password">
+                <mat-label>Password</mat-label>
+                <input matInput type="password" formControlName="password">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <button mat-raised-button color="primary" class="login-btn">LOGIN</button>
+        </div>
+    </form>
+    <p class="create-acc">New here? <a  routerLink="/manager/manager-form">Create an account</a></p>
+     
+</div>

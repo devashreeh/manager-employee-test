@@ -1,0 +1,73 @@
+<div class="manager-form-class">
+
+        <span class="create-account">CREATE ACCOUNT</span>
+        <form [formGroup]="managerForm" (ngSubmit)="onSubmit()">
+            <div class="row form-div">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <mat-form-field appearance="outline" class="signUpDetails">
+                        <mat-label>First Name</mat-label>
+                        <input matInput type="text" placeholder="John" formControlName="firstName" required>
+                    </mat-form-field>
+                
+                </div>
+                <div class="col-md-4">
+                    <mat-form-field appearance="outline" class="signUpDetails">
+                        <mat-label>Last Name</mat-label>
+                        <input matInput type="text" placeholder="Doe" formControlName="lastName" required>
+                    </mat-form-field>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <mat-form-field appearance="outline" class="signUpDetails">
+                        <mat-label>Address</mat-label>
+                            <textarea matInput type="text" placeholder="flatno, street name, city, state, country" formControlName="address" required></textarea>
+                        </mat-form-field>
+                    </div>
+                <div class="col-md-2"></div>
+                    
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <mat-form-field appearance="outline" class="signUpDetails">
+                        <mat-label>Email</mat-label>
+                        <input matInput type="email" formControlName="email" required>
+                            
+                    </mat-form-field>
+                </div>
+                <div class="col-md-4">
+                    <mat-form-field appearance="outline" class="signUpDetails">
+                        <mat-label>Password</mat-label>
+                        <input matInput type="password" formControlName="password" required>
+                    </mat-form-field>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <mat-form-field appearance="outline" class="signUpDetails">
+                        <mat-label>Date of Birth</mat-label>
+                        <input matInput [matDatepicker]="picker"  formControlName="dateOfBirth" required>
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                </div>
+                <div class="col-md-4">
+                    <mat-form-field appearance="outline" class="signUpDetails">
+                        <mat-label>Company</mat-label>
+                        <input matInput type="text" formControlName="company" required>
+                    </mat-form-field>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row">
+                <button mat-raised-button color="primary" class="login-btn" type="submit">SIGN UP</button>
+            </div>
+        </form>
+        <p class="account-exists">Have already an account?<a routerLink="/manager/manager-login">Login here</a></p>
+    </div>

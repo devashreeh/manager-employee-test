@@ -1,0 +1,26 @@
+.employee-class{
+    text-align: center;
+    padding-top: 50px ;
+    padding-left: 40px ;
+    padding-right: 40px ;
+    .signUpDetails {
+        width: 100%;
+    }
+    
+    .login-btn{
+        width: 10%;
+    }
+    .basic-details{
+        width: 25%;
+    }
+    .create-account{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .form-div {
+        margin-top: 20px;
+    }
+    .account-exists{
+        padding-top: 10px;
+    }
+}

@@ -1,0 +1,19 @@
+table {
+    width: 100%;
+}
+
+.employee-list{
+    .data-format{
+      font-size: 15px;
+      font-weight: 500;
+      color: black;
+    }
+    .edit-icon{
+        color:#673ab7;
+        cursor: pointer;
+    }
+    .delete-icon{
+        color:#ef3b3b;
+        cursor: pointer;
+    }
+}
